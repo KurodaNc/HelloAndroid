@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/Fundo" />
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,6 +22,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
         android:text="Login"/>
     <EditText
         android:layout_width="281dp"
@@ -20,6 +32,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
         android:text="Senha"/>
     <EditText
         android:layout_width="281dp"
@@ -40,15 +54,29 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Esqueci a senha"
-            android:textColor="#0000ff"/>
+            android:textColor="#ffffff"
+            android:textSize="22dp"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Cadastre-se"
-            android:textColor="#0000ff"/>
+            android:textColor="#ffffff"
+            android:textSize="22dp"/>
     </LinearLayout>
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:translationZ="2dp"
+        android:visibility="visible"/>
+</LinearLayout>
 
 <Button
     android:layout_width="wrap_content"
@@ -57,3 +85,4 @@
     android:layout_gravity="center"/>
 
 </LinearLayout>
+</FrameLayout>
