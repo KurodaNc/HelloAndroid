@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.btLogin).setOnClickListener(this)
+        findViewById<Button>(R.id.btLogin).setOnClickListener(object: View.OnClickListener{
+            override fun onClick(view: View?){
+                startActivity(Intent(this@MainActivity,HomeActivity::class.java))
+            }
+        })
         findViewById<TextView>(R.id.btEsqueciSenha).setOnClickListener(this)
         findViewById<TextView>(R.id.btCadastrar).setOnClickListener(this)
     }
