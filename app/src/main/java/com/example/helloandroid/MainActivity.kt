@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.example.helloandroid.extension.Activity.alert
 
 //comentario de alteracao 1.1
 //comentario do github
@@ -38,9 +39,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,HomeActivity::class.java))
         } else {
             //erro de login
+            alert(msg = "Login incorreto, digite os dados novamente")
         }
 
     }
+
+    private fun alert() {
+        TODO("Not yet implemented")
+    }
+
     private fun onClickEsqueciSenha() {
         startActivity(Intent(this,EsqueciSenhaActivity::class.java))
     }
