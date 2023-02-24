@@ -24,6 +24,7 @@
             android:textSize="22sp" />
 
         <EditText
+            android:id="@+id/tLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -35,6 +36,7 @@
             android:textSize="22sp" />
 
         <EditText
+            android:id="@+id/tSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>

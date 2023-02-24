@@ -27,7 +27,19 @@ class MainActivity : AppCompatActivity() {
 
     //um metodo para cada evento aqui
     private fun onClickLogin() {
-        startActivity(Intent(this,HomeActivity::class.java))
+        //encontrar as views
+        val tLogin = findViewById<TextView>(R.id.tLogin)
+        val tSenha = findViewById<TextView>(R.id.tSenha)
+        //le os textos
+        val login = tLogin.text.toString()
+        val senha = tSenha.text.toString()
+        if (login == "naoto" && senha == "123"){
+            //login ok, vai para Home
+            startActivity(Intent(this,HomeActivity::class.java))
+        } else {
+            //erro de login
+        }
+
     }
     private fun onClickEsqueciSenha() {
         startActivity(Intent(this,EsqueciSenhaActivity::class.java))
