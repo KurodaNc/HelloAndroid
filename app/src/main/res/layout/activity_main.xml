@@ -25,6 +25,7 @@
 
         <EditText
             android:id="@+id/tLogin"
+            android:textColor="#37D81B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -37,6 +38,7 @@
 
         <EditText
             android:id="@+id/tSenha"
+            android:textColor="#37D81B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
