@@ -3,6 +3,7 @@ package com.example.helloandroid
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log //import do log
 import android.widget.Button
 import android.widget.TextView
 import com.example.helloandroid.extension.Activity.alert
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         //le os textos
         val login = tLogin.text.toString()
         val senha = tSenha.text.toString()
+        Log.d("[Aula4-Prog]","Login: $login, senha: $senha")
         if (login == "naoto" && senha == "123"){
             //login ok, vai para Home
             startActivity(Intent(this,HomeActivity::class.java))
