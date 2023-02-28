@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log //import do log
 import android.widget.Button
 import android.widget.TextView
+import com.example.helloandroid.domain.LoginService
 import com.example.helloandroid.extension.Activity.alert
 
 //comentario de alteracao 1.1
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
         val login = tLogin.text.toString()
         val senha = tSenha.text.toString()
         Log.d("[Aula4-Prog]","Login: $login, senha: $senha")
-        if (login == "naoto" && senha == "123"){
+        val service = LoginService()
+        val user = service.login(login,senha)
+        if(user != null) {
             //login ok, vai para Home
             startActivity(Intent(this,HomeActivity::class.java))
         } else {
@@ -44,10 +47,6 @@ class MainActivity : AppCompatActivity() {
             alert(msg = "Login incorreto, digite os dados novamente")
         }
 
-    }
-
-    private fun alert() {
-        TODO("Not yet implemented")
     }
 
     private fun onClickEsqueciSenha() {
