@@ -21,7 +21,9 @@ class EsqueciSenhaActivity : AppCompatActivity() {
         val service = EsqueciSenhaService()
         val ok = service.recuperarSenha(login)
         if(ok) {
-            alert("Sua senha foi enviada para seu e-mail.")
+            alert("Sua senha foi enviada para seu e-mail."){
+                finish()
+            }
         } else {
             alert("Ocorreu um erro ao recuperar a senha.")
         }
