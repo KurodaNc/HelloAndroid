@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         if(user != null) {
             //login ok, vai para Home
             startActivity(Intent(this,HomeActivity::class.java))
+            finish()
         } else {
             //erro de login
             alert(msg = "Login incorreto, digite os dados novamente")
