@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:text="Digite o seu login"/>
     <EditText
+        android:id="@+id/tLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
